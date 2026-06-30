@@ -1,9 +1,13 @@
 import Payment from "../models/payment.model.js";
 import User from "../models/user.model.js";
-import razorpay from "../services/razorpay.service.js";
+import Razorpay from "razorpay";
 import crypto from "crypto"
 
 export const createOrder = async (req,res) => {
+    const razorpay = new Razorpay({
+  key_id: process.env.RAZORPAY_KEY_ID,
+  key_secret: process.env.RAZORPAY_KEY_SECRET,
+});
     try {
         const {planId, amount, credits} = req.body;
           if (!amount || !credits) {
@@ -16,7 +20,7 @@ export const createOrder = async (req,res) => {
       receipt: `receipt_${Date.now()}`,
     };
 
-    const order = await razorpay.orders.create(options)
+const order = await razorpay.orders.create(options);
 
      await Payment.create({
       userId: req.userId,
