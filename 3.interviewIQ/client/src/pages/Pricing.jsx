@@ -74,7 +74,7 @@ function Pricing() {
       
 
       const options = {
-       alert(import.meta.env.VITE_RAZORPAY_KEY_ID);
+       
       key: import.meta.env.VITE_RAZORPAY_KEY_ID,
       amount: result.data.amount,
       currency: "INR",
