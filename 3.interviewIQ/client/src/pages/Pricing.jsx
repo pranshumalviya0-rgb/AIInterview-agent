@@ -74,6 +74,7 @@ function Pricing() {
       
 
       const options = {
+        console.log("Frontend Razorpay Key:", import.meta.env.VITE_RAZORPAY_KEY_ID);
       key: import.meta.env.VITE_RAZORPAY_KEY_ID,
       amount: result.data.amount,
       currency: "INR",
