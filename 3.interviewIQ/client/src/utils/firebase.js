@@ -2,12 +2,13 @@
 import { initializeApp } from "firebase/app";
 import {getAuth, GoogleAuthProvider} from "firebase/auth"
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_APIKEY,
-  authDomain: "interviewiq-ba6ba.firebaseapp.com",
-  projectId: "interviewiq-ba6ba",
-  storageBucket: "interviewiq-ba6ba.firebasestorage.app",
-  messagingSenderId: "862159592601",
-  appId: "1:862159592601:web:7308d702cd708076ddec08"
+  apiKey: "AIzaSyBmeKsxLgiJyc__nPq4MFxB6yV9s4iwCI8",
+  authDomain: "interview-agent-119c1.firebaseapp.com",
+  projectId: "interview-agent-119c1",
+  storageBucket: "interview-agent-119c1.firebasestorage.app",
+  messagingSenderId: "252157116127",
+  appId: "1:252157116127:web:b34e25751bb7846125736a",
+  measurementId: "G-RDG2GSGFJ6"
 };
 
 const app = initializeApp(firebaseConfig);
