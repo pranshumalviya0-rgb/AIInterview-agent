@@ -346,11 +346,13 @@ setIsSubmitting(false)
           </div>
 
           {/* subtitle */}
-          {subtitle && (
-            <div className='w-full max-w-md bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm'>
-              <p className='text-gray-700 text-sm sm:text-base font-medium text-center leading-relaxed'>{subtitle}</p>
-            </div>
-          )}
+         <div className="w-full max-w-md h-20">
+    {subtitle && (
+        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm h-full">
+            <p>{subtitle}</p>
+        </div>
+    )}
+</div>
 
 
           {/* timer Area */}
