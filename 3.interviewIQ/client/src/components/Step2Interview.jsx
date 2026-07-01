@@ -346,12 +346,12 @@ setIsSubmitting(false)
           </div>
 
           {/* subtitle */}
-         <div className="w-full max-w-md h-20">
-    {subtitle && (
-        <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm h-full">
-            <p>{subtitle}</p>
-        </div>
-    )}
+        <div className="w-full max-w-md h-24">
+  <div className="bg-gray-50 border border-gray-200 rounded-xl p-4 shadow-sm h-full flex items-center justify-center overflow-hidden">
+    <p className="text-gray-700 text-sm sm:text-base font-medium text-center leading-relaxed break-words whitespace-normal overflow-y-auto w-full">
+      {subtitle}
+    </p>
+  </div>
 </div>
 
 
